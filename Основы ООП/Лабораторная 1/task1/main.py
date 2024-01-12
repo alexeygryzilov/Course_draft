@@ -19,11 +19,13 @@ class Ferry:
             raise TypeError('Название парома должно быть словом')
         self.name = name
 
+
         if not isinstance(capacity, int):
             raise TypeError('Пассажировместимость парома должна быть целым числом')
         if capacity <= 0:
             raise ValueError('Пассажировместимость парома должна быть положительным числом')
         self.capacity = capacity
+
 
         if not isinstance(passengers, int):
             raise TypeError('Количество пассажиров должно быть целым числом')
